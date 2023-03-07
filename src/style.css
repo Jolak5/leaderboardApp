@@ -62,7 +62,6 @@ input {
 
 li {
   list-style: none;
-  padding: 5px 0;
 }
 
 li:nth-child(odd) {
