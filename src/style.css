@@ -1,6 +1,6 @@
 ul {
   padding: 0;
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 body {
@@ -19,6 +19,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
 .logo {
   width: 100px;
   animation: rotation 1.5s infinite linear;
@@ -42,7 +43,7 @@ h1 {
 
 @keyframes rotation {
   0% {
-   transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 
   0% {
@@ -105,10 +106,6 @@ input {
   border: solid 2px black;
   cursor: pointer;
   background-color: aqua;
-}
-
-ul {
-  margin-top: 20px;
 }
 
 li {
