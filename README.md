@@ -2,32 +2,6 @@
 
 <a name="readme-top"></a>
 
-<!--
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
--->
-
-<div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Leaderboard</b></h3>
-
-</div>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -54,21 +28,35 @@ REQUIRED SECTIONS:
 
 # 📖 [Leaderboard] <a name="about-project"></a>
 
-This project is for my portfolio. This website store data for high scores using API. I am delighted to share this with you
+This project is a leaderboard website. This website store data for high scores using API. I am delighted to share this with you
 
 ## 🛠 Built With <a name="built-with"></a>
 
-HTML
-CSS
-Javascript
-
 ### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">Javascript</a></li>
+    <li><a href="https://expressjs.com/">CSS</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[Hit the Api]**
+- **[Submit data to API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://jolak5.github.io/leaderboard/)
+>
+
+- [Live Demo Link](https://jolak5.github.io/leaderboardApp/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,64 +68,26 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: https://github.com/Jolak5/leaderboard
+In order to run this project you need: https://github.com/Jolak5/leaderboardApp
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- IDE (FOR EXAMPLE: VSCODE, ...)
+- TERMINAL
+- GIT
 
 ### Setup
 
-Clone this repository to your desired folder: https://github.com/Jolak5/Leaderboard.git
+Clone this repository to your desired folder:
 
-<!--
 Example commands:
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/Jolak5/leaderboardApp
+  cd to-d0-list
 ```
---->
 
 ### Usage
 
-To contribute to this project, execute the following command: git push https://github.com/Jolak5/Leaderboard.git
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
+To contribute to this project, execute the following command: git push https://github.com/Jolak5/Leaderboard
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,6 +107,19 @@ Example:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- **[Hit the API]**
+- **[Better styling]**
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -169,7 +132,7 @@ If you like this project, please add it to your repository and visit it at any p
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my teammate, Caleb for the videos he sent that really helped me complete this project in time...
+Thanks to my code reviewers for helping to ensure that this code is good.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
