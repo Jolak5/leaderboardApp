@@ -1,3 +1,8 @@
+ul {
+  padding: 0;
+  margin: 20px 0 0;
+}
+
 body {
   background-color: rgb(133, 91, 13);
   color: white;
@@ -6,6 +11,48 @@ body {
 
 h1 {
   font-size: 3rem;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100px;
+  animation: rotation 1.5s infinite linear;
+}
+
+.logo:hover {
+  animation: none;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+h1:hover {
+  font-size: 3.2rem;
 }
 
 h2 {
@@ -22,7 +69,7 @@ section {
 main {
   width: 689px;
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -32,10 +79,9 @@ main {
   gap: 10px;
 }
 
-.container {
-  /* border: solid 1px black; */
+/* .container {
   width: 80%;
-}
+} */
 
 form {
   display: flex;
@@ -52,18 +98,25 @@ input {
   padding: 10px;
   margin-top: 20px;
   cursor: pointer;
+  background-color: aqua;
 }
 
 .refresh > button {
   padding: 10px;
   border: solid 2px black;
   cursor: pointer;
+  background-color: aqua;
 }
 
 li {
   list-style: none;
+  padding: 5px;
 }
 
 li:nth-child(odd) {
   background-color: green;
+}
+
+li:nth-child(odd):hover {
+  background-color: purple;
 }

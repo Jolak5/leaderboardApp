@@ -7,12 +7,6 @@ import { postData } from '../modules/postData.js';
 const submit = document.getElementById('button');
 const refresh = document.querySelector('.refresh');
 const container = document.querySelector('.container');
-const deleteBtn = document.querySelector('.delete');
-
-submit.addEventListener('click', (e) => {
-  e.preventDefault();
-  postData();
-});
 
 const refreshResult = async () => {
   let type = '';
@@ -26,5 +20,15 @@ const refreshResult = async () => {
 
 refresh.addEventListener('click', (e) => {
   e.preventDefault();
+  refreshResult();
+});
+
+submit.addEventListener('click', (e) => {
+  e.preventDefault();
+  postData();
+  refreshResult();
+});
+
+window.addEventListener('load', () => {
   refreshResult();
 });
