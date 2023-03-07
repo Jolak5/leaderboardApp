@@ -1,3 +1,8 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: rgb(133, 91, 13);
   color: white;
@@ -36,9 +41,9 @@ main {
   gap: 10px;
 }
 
-.container {
+/* .container {
   width: 80%;
-}
+} */
 
 form {
   display: flex;
@@ -65,6 +70,10 @@ input {
   background-color: aqua;
 }
 
+ul {
+  margin-top: 20px;
+}
+
 li {
   list-style: none;
   padding: 5px;
@@ -72,4 +81,8 @@ li {
 
 li:nth-child(odd) {
   background-color: green;
+}
+
+li:nth-child(odd):hover {
+  background-color: purple;
 }
