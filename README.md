@@ -82,7 +82,7 @@ Example commands:
 
 ```sh
   git clone https://github.com/Jolak5/leaderboardApp
-  cd to-d0-list
+  cd leaderboardApp
 ```
 
 ### Usage
