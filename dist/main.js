@@ -9,6 +9,28 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./modules/getData.js":
+/*!****************************!*\
+  !*** ./modules/getData.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"getData\": () => (/* binding */ getData)\n/* harmony export */ });\n/* eslint-disable import/prefer-default-export */\nconst getData = async () => {\n  const res = await fetch(\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AJs6oseRhAwLgsTmDlVP/scores'\n  );\n  const result = await res.json();\n  return result;\n};\n\n\n//# sourceURL=webpack://leaderboardapp/./modules/getData.js?");
+
+/***/ }),
+
+/***/ "./modules/postData.js":
+/*!*****************************!*\
+  !*** ./modules/postData.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"postData\": () => (/* binding */ postData)\n/* harmony export */ });\n/* eslint-disable import/prefer-default-export */\nconst postData = async () => {\n  const name = document.getElementById('name');\n  const score = document.getElementById('score');\n  const res = await fetch(\n    'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AJs6oseRhAwLgsTmDlVP/scores',\n    {\n      method: 'POST',\n      body: JSON.stringify({\n        user: name.value,\n        score: score.value,\n      }),\n      headers: { 'Content-Type': 'application/json' },\n    },\n  );\n  const data = await res.text();\n  return data;\n};\n\n\n//# sourceURL=webpack://leaderboardapp/./modules/postData.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -136,7 +158,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* eslint-disable no-unused-vars */\n\n\n\n\n//# sourceURL=webpack://leaderboardapp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _modules_getData_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modules/getData.js */ \"./modules/getData.js\");\n/* harmony import */ var _modules_postData_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../modules/postData.js */ \"./modules/postData.js\");\n/* eslint-disable no-unused-vars */\n\n\n\n\n\nconst submit = document.getElementById('button');\nconst refresh = document.querySelector('.refresh');\nconst container = document.querySelector('.container');\n\nsubmit.addEventListener('click', (e) => {\n  e.preventDefault();\n  (0,_modules_postData_js__WEBPACK_IMPORTED_MODULE_3__.postData)();\n});\n\nconst refreshResult = async () => {\n  let type = '';\n  const eachResult = await (0,_modules_getData_js__WEBPACK_IMPORTED_MODULE_2__.getData)();\n  const allResult = eachResult.result;\n  allResult.forEach((item) => {\n    type += `<li>${item.user}: ${item.score}</li>`;\n  });\n  container.innerHTML = type;\n};\n\nrefresh.addEventListener('click', (e) => {\n  e.preventDefault();\n  refreshResult();\n});\n\n\n//# sourceURL=webpack://leaderboardapp/./src/index.js?");
 
 /***/ })
 
