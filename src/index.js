@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import _, { method } from 'lodash';
 import './style.css';
+import Logo from './spa-logotype.png';
 import { getData } from '../modules/getData.js';
 import { postData } from '../modules/postData.js';
 
@@ -32,3 +33,6 @@ submit.addEventListener('click', (e) => {
 window.addEventListener('load', () => {
   refreshResult();
 });
+
+const myLogo = document.querySelector('.logo');
+myLogo.setAttribute('src', Logo);
